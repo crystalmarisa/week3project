@@ -1,0 +1,248 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Port Lligat Sans', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TOP SECTION */
+
+div.nav {
+    background-color: #FF8959;
+    height: 80px;
+    width: 100%;
+}
+/* Logo */
+.logo {
+    color: #F6FAE6;
+    float: left;
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 16px;
+}
+.logo img {
+    height: 30px;
+    width: 30px;
+}
+ /* Navigation Bar */
+ .nav ul {
+    float: right; 
+    list-style-type: none;
+    margin: 10px;
+ }
+ .nav ul li {
+     display: inline-block;
+     font-size: 26px;
+     padding: 15px;
+ }
+ .nav ul li a {
+     color: #F6FAE6;
+     padding: 15px;
+     text-decoration: none;
+ }
+
+ /* MIDDLE SECTION */
+
+div.middle {
+    background-color: #F9F4CE;
+    height: 500px;
+    width: 100%;
+}
+ /* Search Bar */
+input {
+    border: 1px outset;
+    box-shadow: 5px 10px 18px #888888;
+    font-size: 16px;
+    height: 40px;
+    margin: 10px;
+    position: absolute;
+    right: 5px;
+    width: 22%;
+}
+.fa-search {
+    font-size: 20px;
+    margin: 17px;
+    position: absolute;
+    right: 5px;
+}
+ /* Image */
+ div.img {
+     float: left;
+     width: 55%;
+ }
+.middle .img img {
+     height: 450px;
+     padding-top: 50px;
+     padding-left: 30px;
+     width: 550px;
+ }
+ /* Written Content */
+div.written-content {
+    float: right;
+    padding: 80px 70px 0 0;
+    text-align: left;
+    width: 45%;
+}
+p {
+     color: #78BE91;
+     font-size: 40px;
+     text-align: left;
+ }
+ span {
+     color: #FF8959;
+ }
+ /* Buttons */
+ .written-content button {
+     display: inline-block;
+ }
+.btn1 {
+    background-color: #78BE91;
+    bottom: 160px;
+    color: #F6FAE6;
+    font-size: 20px;
+    margin: 25px;
+    padding: 15px 50px;
+}
+.btn2 {
+    background-color: #FF8959;
+    bottom: 160px;
+    color: #F6FAE6;
+    font-size: 20px;
+    margin: 25px;
+    padding: 15px 25px;
+}
+
+
+ /* FOOTER */
+
+ footer {
+     background-color: #78BE91;
+     height: 100px;
+     margin: 0;
+ }
+ /* Links */
+ footer ul {
+     list-style-type: none;
+     margin: 0;
+     text-align: center;
+ }
+ footer ul li {
+     display: inline-block;
+     padding: 20px;
+ }
+ footer ul li a {
+     color: #F6FAE6;
+     font-size: 24px;
+     text-decoration: none;
+ }
+
+/* Media Queries */
+
+@media (max-width: 1253px) {
+    .written-content button {
+        margin: 0;
+    }
+}
+@media (max-width: 1030px) {
+   .img {
+       float: none;
+       display: block;
+   }
+   .written-content {
+       float: none;
+       display: block;
+   }
+}
+@media (max-width: 955px) {
+    .logo {
+        display: none;
+    }
+    .nav {
+        float: none;
+        margin: 0;
+    }
+    .nav ul li {
+        font-size: 22px;
+    }
+    .written-content p {
+        font-size: 30px;
+    }
+    .btn1,
+    .btn2 {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+    .middle .img img {
+        height: 350px;
+        width: 450px;
+
+    }  
+}
+@media (max-width: 750px) {
+    .written-content p {
+        font-size: 20px;
+    }
+    div.middle {
+        height: 300px;
+    }
+    .middle .img img {
+        height: 250px;
+        width: 350px;
+    }
+    .btn1,
+    .btn2 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 695px) {
+    .written-content .btn1 {
+        display: none;
+    }
+    .written-content .btn2 {
+        display: none;
+    }
+    .nav ul li {
+        font-size: 14px;
+    }
+    footer {
+        height: 80px;
+    }
+    footer ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 580px) {
+    .nav {
+        height: 40px;
+    }
+    .nav ul {
+        margin: 2px;
+    }
+    .nav ul li {
+        padding: 12px;
+    }
+    .nav ul li a {
+        padding: 12px;
+    }
+    .middle .img img {
+        height: 260px;
+        width: 310px;
+    }
+    div.written-content {
+        padding: 55px 40px 0 10px;
+    }
+    footer {
+        height: 60px;
+    }
+}
+@media (max-width: 505px) {
+    .middle .img img {
+        height: 220px;
+        width: 230px;
+    }
+    div.written-content {
+        padding: 55px 40px 0 10px;
+    }
+}
